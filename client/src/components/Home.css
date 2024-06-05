@@ -1,0 +1,134 @@
+/* Styles for the main application container */
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding-bottom: 100px; /* Add space at the bottom for the footer */
+}
+
+/* Responsive layout adjustment for smaller screens */
+@media screen and (max-width: 768px) {
+  .app {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+}
+
+/* Styles for the form container */
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+/* Styles for the task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* Responsive layout adjustment for smaller screens */
+@media screen and (max-width: 768px) {
+  .task-list {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+}
+
+/* Styles for each task item */
+.task-item {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for task action buttons */
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/* Styles for completed tasks */
+.completed-task {
+  text-decoration: line-through;
+}
+
+/* Styles for task action buttons */
+.task-actions button {
+  margin: 5px;
+}
+
+/* Styles for the edit popup */
+.edit-popup button {
+  width: auto;
+}
+
+form.form {
+  display:flex;
+  padding: auto;
+}
+
+form.form button {
+  align-items: center;
+  width: 50%;
+}
+
+.edit-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for the footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  padding: 20px; /* Padding around the content */
+  text-align: center; /* Center-align the content */
+}
+
+/* Responsive layout adjustment for edit popup on smaller screens */
+@media screen and (max-width: 768px) {
+  .edit-popup {
+    width: 80%;
+  }
+}
+
+/* Button focus style */
+.button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Common styles for buttons */
+.button {
+  padding: 0.75rem 2rem; /* Increase horizontal padding for more space */
+  font-size: 1.1rem; /* Increase font size for better visibility */
+  border-radius: 0.5rem;
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.2s ease; /* Add a transition for a smooth hover effect */
+  border: none;
+  margin: 3px;
+}
+
+/* Button hover style */
+.button:hover {
+  background-color: #333; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}

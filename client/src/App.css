@@ -1,0 +1,108 @@
+/* Styles for the body of the webpage */
+body {
+  font-family: Arial, sans-serif; /* Set the font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #fff; /* Set background color */
+}
+
+/* Styles for heading level 2 elements */
+h2 {
+  text-align: center; /* Center-align text */
+}
+
+/* Styles for the form container */
+.form-container {
+  max-width: 300px; /* Set maximum width */
+  height: 250px; /* Set height */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 100px; /* Add top margin */
+  padding: 35px; /* Add padding */
+  background-color: #2f3f57; /* Set background color */
+  border-radius: 8px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Styles for the header */
+header {
+  display: grid; /* Use grid layout */
+  align-items: center; /* Align items vertically */
+  grid-template-columns: 1fr 1fr 1fr; /* Divide header into three columns */
+  column-gap: 5px; /* Add gap between columns */
+}
+
+/* Styles for images */
+img {
+  border-radius: 50px; /* Add border radius */
+}
+
+/* Styles for heading level 1 elements */
+header h1 {
+  margin: 0; /* Remove margin */
+  font-size: 45px; /* Set font size */
+  color: #333; /* Set text color */
+  text-shadow: 2px 2px; /* Add text shadow */
+  text-align: center; /* Center-align text */
+}
+
+/* Styles for forms */
+form {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin: 0 auto; /* Center horizontally */
+  padding: 35px; /* Add padding */
+}
+
+/* Styles for input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%; /* Set width to 100% */
+  margin-bottom: 10px; /* Add bottom margin */
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border radius */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for buttons */
+button {
+  width: 50%; /* Set width to 50% */
+  padding: 10px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Add pointer cursor */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Button hover styles */
+button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Styles for paragraphs */
+p {
+  margin-top: 10px; /* Add top margin */
+  text-align: center; /* Center-align text */
+}
+
+/* Styles for hyperlinks */
+a {
+  color: #007bff; /* Set text color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Link hover styles */
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
